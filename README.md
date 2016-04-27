@@ -71,13 +71,25 @@ in result to admin will send mail with info about message. Template for letter [
 ```
 index.php?option=com_ajax&plugin=zoocart&group=zoo&format=json&id=111
 ```
+Response
+```json
+{"success":true,"message":null,"messages":null,"data":[{"error":false,"summ":700,"count":7}]}
+```
 ## Del item by cart
 ```
 index.php?option=com_ajax&plugin=delcart&group=zoo&format=json&id=111
 ```
+Response
+```json
+{"success":true,"message":null,"messages":null,"data":[{"error":false,"summ":700,"count":7}]}
+```
 ## Update item count in cart
 ```
 index.php?option=com_ajax&plugin=setcount&group=zoo&format=json&id=111
+```
+Response
+```json
+{"success":true,"message":null,"messages":null,"data":[[[{"item_id":"6","count":8,"price":"100"}],{"error":false,"summ":800,"count":8}]]}
 ```
 ## Clear cart
 ```
