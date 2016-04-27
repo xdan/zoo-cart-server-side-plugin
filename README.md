@@ -102,4 +102,12 @@ For all command will calc price. For this must be created position `prices` and 
     <position name="prices">Цены</position>
 </positions>
 ```
-And in this position must be price elements
+And in this position must be [price elements](https://github.com/xdan/zoo-custom-type-input-element) with filled Ext field. 
+Example
+```
+element 1 
+Price 500 Ext 1
+element 2 
+Price 400 Ext 10
+```
+After send 5 count of items in cart. Price will calc by first element. But then element s will >= 10 then price calc from element 2
